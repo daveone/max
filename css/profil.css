@@ -1,0 +1,20 @@
+.container img{
+	border:1px dashed #1234FF;
+	border-radius:100%;
+	position:relative;
+	
+	
+}
+.container h3{
+	color:green;
+}
+.container p{
+	
+}
+
+a:hover{
+	color:green;
+}
+*{
+	border:1px dashed blue;
+}
