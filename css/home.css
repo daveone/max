@@ -1,0 +1,34 @@
+.picture {
+	background-image:url('http://freehdwalls.net/wp-content/uploads/mercedes-benz-c63-amg-street-city-hd-wallpaper.jpg');
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.picture container {
+	position: relative;
+	top: 100px;
+}
+
+.information {
+	background-color: #Fefefe;
+	border-bottom: 1px solid #dbdbdb;
+	
+}
+
+.picture p {
+	color: grey;
+	font-weight: bold;
+	font-size:20px;
+}
+
+.picture h1 {
+	color: grey;
+	font-family: cursive;
+	font-size: 50px;
+	font-weight: bold;
+}
+.information img{
+	weight:400px;
+	height:200px;
+}

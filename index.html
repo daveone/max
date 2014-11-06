@@ -8,8 +8,9 @@
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-
 		<link href="css/mycss.css" type="text/css" rel="stylesheet">
+		<script src="js/menu.js"></script>
+		
 
 	</head>
 	<body id = "home">
@@ -17,10 +18,10 @@
 			<nav class="navbar navbar-default">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+						<a href="javascript:ajaxpage('home.html', 'content')"><span class="glyphicon glyphicon-home"></span> Home</a>
 					</li>
 					<li>
-						<a href="#">Geschichte</a>
+						<a href="javascript:ajaxpage('geschichte.html', 'content')">Geschichte</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggel" data-toggle="dropdown"> Hunde <span class="caret"></span> </a>
@@ -45,29 +46,26 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="impressum.html">Impressum   </a>
-					</li>
+					<li><a href="javascript:ajaxpage(URL'https://www.codecademy.com/mkmp29', 'content')">Über mich</a></li>
+					<li><a  href="javascript:ajaxpage('impressum.html', 'content');">Impressum</a></li>
 					</u>
 			</nav><!-- Ende Navigation-->
-
-			<div class="row">
-				<h1><u>Info</u></h1>
-				Hier entsteht eine Homepage, im Rahmen der Veranstaltung "Internetbasierter Systeme", der THM Giessen
-
+			
+			<div id="content"></div>
+	
 				<footer class="row">
 					<ol class="breadcrumb">
 						<li>
-							<a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+							<a href="javascript:ajaxpage('home.html', 'content')"><span class="glyphicon glyphicon-home"></span> Home</a>
 						</li>
 						<li>
-							<a href="#">Geschichte</a>
+							<a href="javascript:ajaxpage('geschichte.html', 'content')>Geschichte</a>
 						</li>
 						<li>
-							<a href="standart.html">Hunde</a>
+							<a href="javascript:ajaxpage('hunde.html', 'content')l">Hunde</a>
 						</li>
 						<li>
-							<a href="impressum.html">Impressum</a>
+							<a href="javascript:ajaxpage('impressum.html', 'content')">Impressum</a>
 						</li>
 					</ol>
 					<div class="col col-md-2 col-md-offset-10">
