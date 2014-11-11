@@ -1,20 +1,11 @@
 .container img{
-	border:1px dashed #1234FF;
-	border-radius:100%;
-	position:relative;
-	
-	
-}
-.container h3{
-	color:green;
-}
-.container p{
-	
+        margin-top:-70px;
+        margin-left:170px;
 }
 
-a:hover{
-	color:green;
+.container h3{
+	color:#7D7D7D;
 }
-*{
-	border:1px dashed blue;
+.container p{
+	font-family:Cursive;
 }
