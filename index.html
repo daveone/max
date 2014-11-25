@@ -9,19 +9,19 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/mycss.css" type="text/css" rel="stylesheet">
-		<script src="js/menu.js"></script>
+		
 		
 
 	</head>
-	<body id = "home">
+	<body>
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="javascript:ajaxpage('home.html', 'content')"><span class="glyphicon glyphicon-home"></span> Home</a>
+						<a data-site="home.html" href="home"><span class="glyphicon glyphicon-home"></span> Home</a>
 					</li>
 					<li>
-						<a href="javascript:ajaxpage('geschichte.html', 'content')">Geschichte</a>
+						<a data-site="wikipedia.html" href="wiki">Wikipediasuche</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggel" data-toggle="dropdown"> Hunde <span class="caret"></span> </a>
@@ -46,26 +46,26 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:ajaxpage('profil.html', 'content')">Über mich</a></li>
-					<li><a  href="javascript:ajaxpage('impressum.html', 'content');">Impressum</a></li>
+					<li><a data-site="profil.html" href="profil">Über mich</a></li>
+					<li><a data-site="impressum.html" href="impressum">Impressum</a></li>
 					</u>
 			</nav><!-- Ende Navigation-->
 			
-			<div id="content"></div>
+			<div class="content">
+			
+			</div>
 	
 				<footer class="row">
 					<ol class="breadcrumb">
 						<li>
-							<a href="javascript:ajaxpage('home.html', 'content')"><span class="glyphicon glyphicon-home"></span> Home</a>
+							<a data-site="home.html" href="home"><span class="glyphicon glyphicon-home"></span> Home</a>
 						</li>
 						<li>
-							<a href="javascript:ajaxpage('geschichte.html', 'content'")>Geschichte</a>
+							<a data-site="wiki.html" href="wiki")>Wikipedia</a>
 						</li>
+						
 						<li>
-							<a href="javascript:ajaxpage('hunde.html', 'content')l">Hunde</a>
-						</li>
-						<li>
-							<a href="javascript:ajaxpage('impressum.html', 'content')">Impressum</a>
+							<a data-site="impressum.html" href="impressum">Impressum</a>
 						</li>
 					</ol>
 					<div class="col col-md-2 col-md-offset-10">
@@ -80,5 +80,6 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<!-- Include all compiled plugins (below), or include individual files as needed -->
 			<script src="js/bootstrap.min.js"></script>
+			<script src="js/menu.js"></script>
 	</body>
 </html>
