@@ -2,9 +2,41 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>MeineH Homepage</title>
 </head>
 <body>
 
+	<h3>Suche</h3>
+	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
+		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
+		target="_blank">
+		<select name="uselang">
+			<option selected="selected"
+				title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
+			<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
+			<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
+			<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
+			<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
+			<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
+		</select> <input type="text" name="search" size="20" /> <input type="submit"
+			value="Suchen" />
+	</form>
+	<h3>Volltextsuche</h3>
+	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
+		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
+		target="_blank">
+		<select name="fulltext">
+			<option selected="selected"
+				title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
+			<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
+			<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
+			<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
+			<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
+			<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
+		</select> <input type="text" name="search" size="20" /> <input type="submit"
+			value="Suchen" />
+	</form>
+	<br>
+	<br>
 </body>
 </html>
