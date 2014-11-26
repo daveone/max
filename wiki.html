@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>MeineH Homepage</title>
-</head>
-<body>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Meine Homepage</title>
 
-	<h3>Suche</h3>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+			<h3>Suche</h3>
 	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
 		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
 		target="_blank">
@@ -21,11 +29,12 @@
 		</select> <input type="text" name="search" size="20" /> <input type="submit"
 			value="Suchen" />
 	</form>
-	<h3>Volltextsuche</h3>
+	
 	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
 		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
 		target="_blank">
-		<select name="fulltext">
+		<label for="fulltext">Volltextsuche</label>
+		<select id="fulltext">
 			<option selected="selected"
 				title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
 			<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
@@ -33,10 +42,11 @@
 			<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
 			<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
 			<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-		</select> <input type="text" name="search" size="20" /> <input type="submit"
+		</select> <input type="text" id="fulltext" name="search" size="20" /> <input type="submit"
 			value="Suchen" />
 	</form>
 	<br>
 	<br>
-</body>
+		</div>
+	</body>
 </html>
