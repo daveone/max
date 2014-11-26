@@ -14,10 +14,11 @@
 	</head>
 	<body>
 		<div class="container">
-			<h3>Suche</h3>
+			
 	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
 		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
 		target="_blank">
+		<label for="uselang"><h4>Suche</h4></label>
 		<select name="uselang">
 			<option selected="selected"
 				title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
@@ -26,15 +27,15 @@
 			<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
 			<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
 			<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-		</select> <input type="text" name="search" size="20" /> <input type="submit"
+		</select> <input type="text" id="uselang" name="search" size="20" /> <input type="submit"
 			value="Suchen" />
 	</form>
 	
 	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
 		onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
 		target="_blank">
-		<label for="fulltext">Volltextsuche</label>
-		<select id="fulltext">
+		<label for="fulltext"><h4>Volltextsuche</h4></label>
+		<select name="fulltext">
 			<option selected="selected"
 				title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
 			<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
